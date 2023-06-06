@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num_de_elementos, cuenta, calorias_por_alimentos, calorias_total;
+  cout << "Cuantos alimentos ha consumido hoy";
+  cin >> num_de_elementos;
+  calorias_total=0;
+  cuenta=1;
+  cout<< " Introducir el numero de calorias de cada uno de los "<< num_de_elementos << " alimentos tomados: ";
+  while(cuenta++ <= num_de_elementos){
+    cin>>calorias_por_alimentos;
+  calorias_total= calorias_total + calorias_por_alimentos;
+}
+  
+cout<<" Las calorias totales consumidas hoy son = " <<calorias_total<<endl;
+}
